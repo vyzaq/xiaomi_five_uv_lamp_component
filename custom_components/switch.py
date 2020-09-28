@@ -178,10 +178,10 @@ class XiaomiFiveUVCLampDevice(SwitchEntity):
                 self._device.send, 'get_properties', 
                 [
                     {"did":"power","siid":2,"piid":2},
-                    {"did":"state_code","siid":2,"piid":3},
-                    {"did":"poweroff_time","siid":2,"piid":6},
-                    {"did":"countdown","siid":2,"piid":7},
-                    {"did":"child_lock","siid":4,"piid":1}
+                    # {"did":"state_code","siid":2,"piid":3},
+                    # {"did":"poweroff_time","siid":2,"piid":6},
+                    # {"did":"countdown","siid":2,"piid":7},
+                    # {"did":"child_lock","siid":4,"piid":1}
                 ]
             )
             state = state.pop()
